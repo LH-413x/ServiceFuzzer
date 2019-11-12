@@ -1,0 +1,2 @@
+/usr/bin/ar qc libReporter.a  CMakeFiles/Reporter.dir/FuzzerTracePC.cpp.o CMakeFiles/Reporter.dir/Reporter.cpp.o CMakeFiles/Reporter.dir/ReporterMain.cpp.o
+/usr/bin/ranlib libReporter.a

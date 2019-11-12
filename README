@@ -1,0 +1,5 @@
+reporter是一个线程，随着binder service启动，打开一个linux domain套接字，等待binder client连接。
+链接成功后，客户端发送获取cover的指令，reporter获取binder service的coverage后传递给executor，
+executor通过adb将coverage传送给位于PC上的manager，manager分析coverage后，将下一轮的参数通过adb
+传送给executor，executor设定好参数，fork出子进程，子进程和binder service交互，结束后退出，退出后
+executor询问reporter当前的coverage,重复以上过程。

@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerDefs.h
+cassert
+-
+cstddef
+-
+cstdint
+-
+cstring
+-
+memory
+-
+set
+-
+string
+-
+vector
+-
+
+/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerMain.cpp
+FuzzerDefs.h
+/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerDefs.h
+

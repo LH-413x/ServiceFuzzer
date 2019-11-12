@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="AOSP_Service_Fuzzer"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\befuzzed\;CMake Files\libfuzzer\;CMake Files\service\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="befuzzed">
+				<Option output="/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/befuzzed/befuzzed" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/befuzzed"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/befuzzed/Makefile&quot;  VERBOSE=1 befuzzed"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/befuzzed/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/befuzzed/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/befuzzed/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="befuzzed/fast">
+				<Option output="/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/befuzzed/befuzzed" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/befuzzed"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/befuzzed/Makefile&quot;  VERBOSE=1 befuzzed/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/befuzzed/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/befuzzed/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/befuzzed/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fuzzer">
+				<Option output="/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/libfuzzer/libfuzzer.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/libfuzzer"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/libfuzzer/Makefile&quot;  VERBOSE=1 fuzzer"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/libfuzzer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/libfuzzer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/libfuzzer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fuzzer/fast">
+				<Option output="/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/libfuzzer/libfuzzer.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/libfuzzer"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/libfuzzer/Makefile&quot;  VERBOSE=1 fuzzer/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/libfuzzer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/libfuzzer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/libfuzzer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Reporter">
+				<Option output="/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/service/libReporter.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/service"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/alex/CLionProjects/AOSP_Fuzzer/service/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/service/Makefile&quot;  VERBOSE=1 Reporter"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/service/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/service/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/service/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Reporter/fast">
+				<Option output="/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/service/libReporter.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/service"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/alex/CLionProjects/AOSP_Fuzzer/service/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/service/Makefile&quot;  VERBOSE=1 Reporter/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/service/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/service/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/alex/CLionProjects/AOSP_Fuzzer/cmake-build-debug/service/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/befuzzed/target.cpp">
+			<Option target="befuzzed"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerCrossOver.cpp">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerDataFlowTrace.cpp">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerDataFlowTrace.h">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerDriver.cpp">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerExtFunctionsDlsym.cpp">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerExtFunctionsWeak.cpp">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerExtFunctionsWindows.cpp">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerExtraCounters.cpp">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerFork.cpp">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerFork.h">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerIO.cpp">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerIO.h">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerIOPosix.cpp">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerIOWindows.cpp">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerLoop.cpp">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerMain.cpp">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerMerge.cpp">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerMerge.h">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerMutate.cpp">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerMutate.h">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerSHA1.cpp">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerSHA1.h">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerTracePC.cpp">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerTracePC.h">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerUtil.cpp">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerUtil.h">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerUtilDarwin.cpp">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerUtilFuchsia.cpp">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerUtilLinux.cpp">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerUtilPosix.cpp">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/FuzzerUtilWindows.cpp">
+			<Option target="fuzzer"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/service/FuzzerTracePC.cpp">
+			<Option target="Reporter"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/service/Reporter.cpp">
+			<Option target="Reporter"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/service/ReporterMain.cpp">
+			<Option target="Reporter"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/befuzzed/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\befuzzed\"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/libfuzzer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libfuzzer\"/>
+		</Unit>
+		<Unit filename="/home/alex/CLionProjects/AOSP_Fuzzer/service/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\service\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
